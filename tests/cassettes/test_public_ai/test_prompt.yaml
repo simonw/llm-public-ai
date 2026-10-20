@@ -1,0 +1,94 @@
+interactions:
+- request:
+    body: '{"model":"swiss-ai/apertus-70b-instruct","stream":true,"messages":[{"role":"user","content":"Reply
+      with just the word pelican, lowercase, nothing else"}],"stream_options":{"include_usage":true}}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '194'
+      content-type:
+      - application/json
+      host:
+      - api.publicai.co
+      user-agent:
+      - llm-public-ai/0.1 (+https://github.com/simonw/llm-public-ai)
+      x-stainless-arch:
+      - x64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - Linux
+      x-stainless-package-version:
+      - 3.35.1
+      x-stainless-read-timeout:
+      - '600'
+      x-stainless-retry-count:
+      - '0'
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.13.16
+    method: POST
+    uri: https://api.publicai.co/v1/chat/completions
+  response:
+    body:
+      string: 'data: {"id":"bb7cf31b-15fd-479b-ad9c-dc21e03eeedd","object":"chat.completion.chunk","created":1792508165,"model":"swiss-ai/apertus-70b-instruct","choices":[{"index":0,"delta":{"role":"assistant","content":"pel"}}]}
+
+
+        data: {"id":"bb7cf31b-15fd-479b-ad9c-dc21e03eeedd","object":"chat.completion.chunk","created":1792508165,"model":"swiss-ai/apertus-70b-instruct","choices":[{"index":0,"delta":{"content":"ican"}}]}
+
+
+        data: {"id":"bb7cf31b-15fd-479b-ad9c-dc21e03eeedd","created":1792508165,"model":"swiss-ai/apertus-70b-instruct","object":"chat.completion.chunk","system_fingerprint":"fp1-nst-nes","choices":[{"finish_reason":"stop","index":0,"delta":{}}]}
+
+
+        data: {"id":"bb7cf31b-15fd-479b-ad9c-dc21e03eeedd","created":1792508165,"model":"swiss-ai/apertus-70b-instruct","object":"chat.completion.chunk","choices":[{"index":0,"delta":{}}],"usage":{"completion_tokens":3,"prompt_tokens":73,"total_tokens":76,"completion_tokens_details":{"reasoning_tokens":0},"prompt_tokens_details":{"cached_tokens":0}}}
+
+
+        data: [DONE]
+
+
+        '
+    headers:
+      alt-svc:
+      - h3=":443"; ma=86400
+      cache-control:
+      - no-cache
+      cf-cache-status:
+      - DYNAMIC
+      cf-ray:
+      - a4d8ddfaacd12257-EWR
+      connection:
+      - keep-alive
+      content-security-policy:
+      - frame-ancestors 'none'
+      content-type:
+      - text/event-stream; charset=utf-8
+      date:
+      - Tue, 20 Oct 2026 14:56:05 GMT
+      inference-id:
+      - bb7cf31b-15fd-479b-ad9c-dc21e03eeedd
+      nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      report-to:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=xgGktXZedVYEjPIk4XKvjVhZtVU3GTv5foLXDiL1GBOJvNWiEObuJmd2r4E6i4M9yxUjPfcncHFPh6O76Cx7BgEpbDYDd8rneLv3kBvf%2FQFmbACz9BcTFB49EG0jQuM%2FhMH%2FI%2BzfIQbqUITyS0iGQdNDvd5Myk0%3D"}]}'
+      server:
+      - cloudflare
+      transfer-encoding:
+      - chunked
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+      zp-rid:
+      - 1a5c4f6a-c2f5-401f-a487-3bfc634a5ca9
+    status:
+      code: 200
+      message: OK
+version: 1

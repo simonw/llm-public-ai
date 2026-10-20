@@ -1,5 +1,4 @@
 import json
-import os
 
 import llm
 import pytest
@@ -37,23 +36,110 @@ def test_model_key_and_headers():
     model = llm.get_model("publicai/swiss-ai/apertus-70b-instruct")
     assert model.needs_key == "publicai"
     assert model.key_env_var == "PUBLICAI_API_KEY"
-    assert model.headers["User-Agent"].startswith("llm-public-ai/")
+    client_kwargs = model.client_kwargs(None)
+    assert client_kwargs["base_url"] == "https://api.publicai.co/v1"
+    assert client_kwargs["default_headers"]["User-Agent"].startswith("llm-public-ai/")
     assert str(model) == "Public AI: publicai/swiss-ai/apertus-70b-instruct"
 
 
-def test_no_models_without_key_or_cache(user_path, monkeypatch):
-    monkeypatch.delenv("PUBLICAI_API_KEY")
-    (user_path / "publicai_models.json").remove()
-    assert not [
-        model for model in llm.get_models() if model.model_id.startswith("publicai/")
+def test_thinking_option():
+    assert (
+        "thinking"
+        not in llm.get_model(
+            "publicai/swiss-ai/apertus-70b-instruct"
+        ).Options.model_fields
+    )
+    model = llm.get_model("publicai/swiss-ai/apertus-v1.5-70b")
+    assert "thinking" in model.Options.model_fields
+    for value, expected in ((True, True), (False, False)):
+        prompt = llm.Prompt("hi", model=model, options=model.Options(thinking=value))
+        kwargs = model.build_kwargs(prompt, [], stream=False)
+        assert kwargs["extra_body"] == {
+            "cache": {"no-cache": True},
+            "chat_template_kwargs": {"enable_thinking": expected},
+        }
+    # Only the cache bypass is sent if the option is unset
+    prompt = llm.Prompt("hi", model=model, options=model.Options())
+    assert model.build_kwargs(prompt, [], stream=False)["extra_body"] == {
+        "cache": {"no-cache": True}
+    }
+    # Models without a thinking toggle send neither
+    model = llm.get_model("publicai/swiss-ai/apertus-70b-instruct")
+    prompt = llm.Prompt("hi", model=model, options=model.Options())
+    assert "extra_body" not in model.build_kwargs(prompt, [], stream=False)
+
+
+@pytest.mark.parametrize("chunk_size", (1, 2, 3, 5, 100))
+def test_inline_thinking_splitter(chunk_size):
+    text = "<|inner_prefix|>Think <|inner hard.<|inner_suffix|>Answer is 51 <| ok"
+    splitter = llm_public_ai.InlineThinkingSplitter()
+    events = []
+    for i in range(0, len(text), chunk_size):
+        events.extend(splitter.feed(text[i : i + chunk_size]))
+    events.extend(splitter.flush())
+    reasoning = "".join(e.chunk for e in events if e.type == "reasoning")
+    answer = "".join(e.chunk for e in events if e.type == "text")
+    assert reasoning == "Think <|inner hard."
+    assert answer == "Answer is 51 <| ok"
+
+
+def test_build_messages_with_history():
+    model = llm.get_model("publicai/swiss-ai/apertus-70b-instruct")
+    prompt = llm.Prompt(
+        None,
+        model=model,
+        options=model.Options(),
+        messages=[
+            llm.system("Be brief"),
+            llm.user("Hi"),
+            llm.assistant("Hello!"),
+            llm.system("Be brief"),
+            llm.user("And again"),
+        ],
+    )
+    # The repeated, unchanged system prompt is not sent twice
+    assert model.build_messages(prompt) == [
+        {"role": "system", "content": "Be brief"},
+        {"role": "user", "content": "Hi"},
+        {"role": "assistant", "content": "Hello!"},
+        {"role": "user", "content": "And again"},
+    ]
+
+
+def test_build_messages_with_image():
+    model = llm.get_model("publicai/swiss-ai/apertus-v1.5-70b")
+    prompt = llm.Prompt(
+        "Describe this",
+        model=model,
+        options=model.Options(),
+        attachments=[
+            llm.Attachment(url="https://example.com/a.png", type="image/png"),
+            llm.Attachment(content=b"fake", type="image/png"),
+        ],
+    )
+    assert model.build_messages(prompt) == [
+        {
+            "role": "user",
+            "content": [
+                {"type": "text", "text": "Describe this"},
+                {
+                    "type": "image_url",
+                    "image_url": {"url": "https://example.com/a.png"},
+                },
+                {
+                    "type": "image_url",
+                    "image_url": {"url": "data:image/png;base64,ZmFrZQ=="},
+                },
+            ],
+        }
     ]
 
 
 @pytest.mark.vcr
 def test_prompt():
     model = llm.get_model("publicai/swiss-ai/apertus-70b-instruct")
-    response = model.prompt("Say hello in Romansh. Just the greeting.")
-    assert str(response) == "Allegra!"
+    response = model.prompt("Reply with just the word pelican, lowercase, nothing else")
+    assert str(response).strip() == "pelican"
     assert response.input_tokens > 0
     assert response.output_tokens > 0
 
@@ -61,20 +147,36 @@ def test_prompt():
 @pytest.mark.vcr
 def test_prompt_no_stream():
     model = llm.get_model("publicai/swiss-ai/apertus-70b-instruct")
-    response = model.prompt("Say hello in Romansh. Just the greeting.", stream=False)
-    assert str(response) == "Allegra!"
+    response = model.prompt(
+        "Reply with just the word pelican, lowercase, nothing else", stream=False
+    )
+    assert str(response).strip() == "pelican"
     assert response.response_json["model"] == "swiss-ai/apertus-70b-instruct"
 
 
 @pytest.mark.vcr
 def test_prompt_streams_reasoning():
     model = llm.get_model("publicai/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B")
-    response = model.prompt("What is 17*3? Reply with just the number.")
+    response = model.prompt("What is 17*3?", thinking=True)
+    events = list(response.stream_events())
+    reasoning = "".join(e.chunk for e in events if e.type == "reasoning")
+    text = "".join(e.chunk for e in events if e.type == "text")
+    assert reasoning
+    assert "51" in text
+    assert response.response_json["reasoning"] == reasoning
+
+
+@pytest.mark.vcr
+def test_apertus_inline_thinking():
+    model = llm.get_model("publicai/swiss-ai/apertus-v1.5-70b")
+    response = model.prompt("What is 17*3?", thinking=True)
     events = list(response.stream_events())
     reasoning = "".join(e.chunk for e in events if e.type == "reasoning")
     text = "".join(e.chunk for e in events if e.type == "text")
     assert "51" in reasoning
-    assert text.strip() == "51"
+    assert "51" in text
+    assert "<|inner" not in reasoning + text
+    assert response.response_json["reasoning"] == reasoning
 
 
 @pytest.mark.vcr
@@ -110,9 +212,9 @@ def test_schema():
 @pytest.mark.asyncio
 async def test_async_prompt():
     model = llm.get_async_model("publicai/swiss-ai/apertus-70b-instruct")
-    response = model.prompt("Say hello in Romansh. Just the greeting.")
+    response = model.prompt("Reply with just the word pelican, lowercase, nothing else")
     chunks = [chunk async for chunk in response]
-    assert "".join(chunks) == "Allegra!"
+    assert "".join(chunks).strip() == "pelican"
     usage = await response.usage()
     assert usage.input > 0
 
@@ -126,7 +228,7 @@ def test_models_command():
         "  pricing: $0.82 input, $2.92 output (per million tokens)\n"
         "  supports: text only\n"
     ) in result.output
-    assert "  supports: tools, schemas, images\n" in result.output
+    assert "  supports: tools, schemas, images, thinking\n" in result.output
 
 
 def test_models_command_json(models):

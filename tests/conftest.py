@@ -1,7 +1,6 @@
 import json
 import os
 
-import llm
 import pytest
 
 API_KEY = os.environ.get("PUBLICAI_API_KEY") or "mock-key"
@@ -49,9 +48,22 @@ def user_path(tmpdir, monkeypatch):
     return dir
 
 
+def _strip_gateway_headers(response):
+    # x-litellm-* headers include account details such as total key spend
+    response["headers"] = {
+        key: value
+        for key, value in response["headers"].items()
+        if not key.lower().startswith(("x-litellm", "llm_provider-"))
+    }
+    return response
+
+
 @pytest.fixture(scope="module")
 def vcr_config():
-    return {"filter_headers": ["authorization"]}
+    return {
+        "filter_headers": ["authorization"],
+        "before_record_response": _strip_gateway_headers,
+    }
 
 
 @pytest.fixture

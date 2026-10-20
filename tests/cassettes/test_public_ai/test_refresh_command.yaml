@@ -1,0 +1,59 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.publicai.co
+      user-agent:
+      - llm-public-ai/0.1 (+https://github.com/simonw/llm-public-ai)
+    method: GET
+    uri: https://api.publicai.co/v1/models
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAA/8WUXUvDMBSG/0uud9om69rau1ZECmMi252IpOvBxfWLJt2Q0f9uhkMzsRMs1bsk
+        nLzvk/ORA8m44iR8OBCRkZDIvZASuLB5jY1qJQQpiFKqpl0rMiFV+oJ6EZKiyjDXB+sGuUJ9k3q+
+        71HHc5iO2peYPaWvhp4OrRuxFuUzCbVVWbdaxbGoDm7VacO6bnLC4ELqUF5XDdr3eyxheRPBPLlb
+        wM6FKYshWf2GxpDtAWIzk2j2PdEtFgU/Q2L+iEgmkftJJGvk2xy53NixwFxsgdIYdlPLgWRIxT5k
+        e3jcPp6vrbOj1uzYP2ojyu1RZUj//GDjO3/jE6Qjv2KEIQuMDmLWFbtQsmMaRxz3fpJLA68T8x/z
+        ZSItsKhUU51jBUCZE0NEWTwOmfEXGamKl9cwX9nRPInAHVivd60e+6mZGK/rHg2DXEhFujfbW34Q
+        PgYAAA==
+    headers:
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      cf-placement:
+      - remote-AMS
+      cf-ray:
+      - a4d8de5acfef4b9f-EWR
+      connection:
+      - keep-alive
+      content-encoding:
+      - gzip
+      content-type:
+      - application/json
+      date:
+      - Tue, 20 Oct 2026 14:56:19 GMT
+      nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      report-to:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=VJmwadtbNuujrlfauAM7d9LrJN4zR4edzmAo4q9TZqVvK9tjgBOq02%2FXYBj4ITEI6Ppx7sFeAUKkyfFLibEpe0gdUNjuHMoLzE5T06YJKi1XBb9h8ZxiqQmiRpdR3V1neBo%3D"}]}'
+      server:
+      - cloudflare
+      transfer-encoding:
+      - chunked
+      vary:
+      - accept-encoding
+      zp-rid:
+      - 82db455b-43f4-4800-bc72-6337980cd60a
+    status:
+      code: 200
+      message: OK
+version: 1

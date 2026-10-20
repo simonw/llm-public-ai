@@ -1,0 +1,158 @@
+interactions:
+- request:
+    body: '{"model":"aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B","stream":true,"messages":[{"role":"user","content":"What
+      is 17*3?"}],"stream_options":{"include_usage":true},"cache":{"no-cache":true},"chat_template_kwargs":{"enable_thinking":true}}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '239'
+      content-type:
+      - application/json
+      host:
+      - api.publicai.co
+      user-agent:
+      - llm-public-ai/0.1 (+https://github.com/simonw/llm-public-ai)
+      x-stainless-arch:
+      - x64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - Linux
+      x-stainless-package-version:
+      - 3.35.1
+      x-stainless-read-timeout:
+      - '600'
+      x-stainless-retry-count:
+      - '0'
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.13.16
+    method: POST
+    uri: https://api.publicai.co/v1/chat/completions
+  response:
+    body:
+      string: "data: {\"id\":\"chatcmpl-81ac5c985fda4120\",\"created\":1792508222,\"\
+        model\":\"aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B\",\"object\":\"chat.completion.chunk\"\
+        ,\"choices\":[{\"index\":0,\"delta\":{\"reasoning_content\":\"The\",\"role\"\
+        :\"assistant\"}}]}\n\ndata: {\"id\":\"chatcmpl-81ac5c985fda4120\",\"created\"\
+        :1792508222,\"model\":\"aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B\",\"\
+        object\":\"chat.completion.chunk\",\"choices\":[{\"index\":0,\"delta\":{\"\
+        reasoning_content\":\" user\"}}]}\n\ndata: {\"id\":\"chatcmpl-81ac5c985fda4120\"\
+        ,\"created\":1792508222,\"model\":\"aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B\"\
+        ,\"object\":\"chat.completion.chunk\",\"choices\":[{\"index\":0,\"delta\"\
+        :{\"reasoning_content\":\" is\"}}]}\n\ndata: {\"id\":\"chatcmpl-81ac5c985fda4120\"\
+        ,\"created\":1792508222,\"model\":\"aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B\"\
+        ,\"object\":\"chat.completion.chunk\",\"choices\":[{\"index\":0,\"delta\"\
+        :{\"reasoning_content\":\" asking\"}}]}\n\ndata: {\"id\":\"chatcmpl-81ac5c985fda4120\"\
+        ,\"created\":1792508222,\"model\":\"aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B\"\
+        ,\"object\":\"chat.completion.chunk\",\"choices\":[{\"index\":0,\"delta\"\
+        :{\"reasoning_content\":\" for\"}}]}\n\ndata: {\"id\":\"chatcmpl-81ac5c985fda4120\"\
+        ,\"created\":1792508222,\"model\":\"aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B\"\
+        ,\"object\":\"chat.completion.chunk\",\"choices\":[{\"index\":0,\"delta\"\
+        :{\"reasoning_content\":\" the\"}}]}\n\ndata: {\"id\":\"chatcmpl-81ac5c985fda4120\"\
+        ,\"created\":1792508222,\"model\":\"aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B\"\
+        ,\"object\":\"chat.completion.chunk\",\"choices\":[{\"index\":0,\"delta\"\
+        :{\"reasoning_content\":\" product\"}}]}\n\ndata: {\"id\":\"chatcmpl-81ac5c985fda4120\"\
+        ,\"created\":1792508222,\"model\":\"aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B\"\
+        ,\"object\":\"chat.completion.chunk\",\"choices\":[{\"index\":0,\"delta\"\
+        :{\"reasoning_content\":\" of\"}}]}\n\ndata: {\"id\":\"chatcmpl-81ac5c985fda4120\"\
+        ,\"created\":1792508222,\"model\":\"aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B\"\
+        ,\"object\":\"chat.completion.chunk\",\"choices\":[{\"index\":0,\"delta\"\
+        :{\"reasoning_content\":\" 1\"}}]}\n\ndata: {\"id\":\"chatcmpl-81ac5c985fda4120\"\
+        ,\"created\":1792508222,\"model\":\"aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B\"\
+        ,\"object\":\"chat.completion.chunk\",\"choices\":[{\"index\":0,\"delta\"\
+        :{\"reasoning_content\":\"7\"}}]}\n\ndata: {\"id\":\"chatcmpl-81ac5c985fda4120\"\
+        ,\"created\":1792508222,\"model\":\"aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B\"\
+        ,\"object\":\"chat.completion.chunk\",\"choices\":[{\"index\":0,\"delta\"\
+        :{\"reasoning_content\":\" and\"}}]}\n\ndata: {\"id\":\"chatcmpl-81ac5c985fda4120\"\
+        ,\"created\":1792508222,\"model\":\"aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B\"\
+        ,\"object\":\"chat.completion.chunk\",\"choices\":[{\"index\":0,\"delta\"\
+        :{\"reasoning_content\":\" 3\"}}]}\n\ndata: {\"id\":\"chatcmpl-81ac5c985fda4120\"\
+        ,\"created\":1792508222,\"model\":\"aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B\"\
+        ,\"object\":\"chat.completion.chunk\",\"choices\":[{\"index\":0,\"delta\"\
+        :{\"reasoning_content\":\".\"}}]}\n\ndata: {\"id\":\"chatcmpl-81ac5c985fda4120\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508222,\"model\":\"\
+        aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B\",\"choices\":[{\"index\":0,\"\
+        delta\":{\"content\":\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-81ac5c985fda4120\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508222,\"model\":\"\
+        aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B\",\"choices\":[{\"index\":0,\"\
+        delta\":{\"content\":\"7\"}}]}\n\ndata: {\"id\":\"chatcmpl-81ac5c985fda4120\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508222,\"model\":\"\
+        aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B\",\"choices\":[{\"index\":0,\"\
+        delta\":{\"content\":\" \xD7\"}}]}\n\ndata: {\"id\":\"chatcmpl-81ac5c985fda4120\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508222,\"model\":\"\
+        aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B\",\"choices\":[{\"index\":0,\"\
+        delta\":{\"content\":\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-81ac5c985fda4120\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508222,\"model\":\"\
+        aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B\",\"choices\":[{\"index\":0,\"\
+        delta\":{\"content\":\"3\"}}]}\n\ndata: {\"id\":\"chatcmpl-81ac5c985fda4120\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508222,\"model\":\"\
+        aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B\",\"choices\":[{\"index\":0,\"\
+        delta\":{\"content\":\" =\"}}]}\n\ndata: {\"id\":\"chatcmpl-81ac5c985fda4120\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508222,\"model\":\"\
+        aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B\",\"choices\":[{\"index\":0,\"\
+        delta\":{\"content\":\" **\"}}]}\n\ndata: {\"id\":\"chatcmpl-81ac5c985fda4120\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508222,\"model\":\"\
+        aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B\",\"choices\":[{\"index\":0,\"\
+        delta\":{\"content\":\"5\"}}]}\n\ndata: {\"id\":\"chatcmpl-81ac5c985fda4120\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508222,\"model\":\"\
+        aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B\",\"choices\":[{\"index\":0,\"\
+        delta\":{\"content\":\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-81ac5c985fda4120\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508222,\"model\":\"\
+        aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B\",\"choices\":[{\"index\":0,\"\
+        delta\":{\"content\":\"**\"}}]}\n\ndata: {\"id\":\"chatcmpl-81ac5c985fda4120\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508222,\"model\":\"\
+        aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B\",\"choices\":[{\"index\":0,\"\
+        delta\":{},\"finish_reason\":\"stop\"}]}\n\ndata: {\"id\":\"chatcmpl-81ac5c985fda4120\"\
+        ,\"created\":1792508222,\"model\":\"aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B\"\
+        ,\"object\":\"chat.completion.chunk\",\"system_fingerprint\":\"vllm-0.31.0-tp2-2b85f95a\"\
+        ,\"choices\":[{\"index\":0,\"delta\":{}}],\"usage\":{\"completion_tokens\"\
+        :8,\"prompt_tokens\":14,\"total_tokens\":22,\"completion_tokens_details\"\
+        :{\"reasoning_tokens\":15}}}\n\ndata: [DONE]\n\n"
+    headers:
+      alt-svc:
+      - h3=":443"; ma=86400
+      cache-control:
+      - no-cache
+      cf-cache-status:
+      - DYNAMIC
+      cf-placement:
+      - local-IAD
+      cf-ray:
+      - a4d8df5a19dd2902-IAD
+      connection:
+      - keep-alive
+      content-security-policy:
+      - frame-ancestors 'none'
+      content-type:
+      - text/event-stream; charset=utf-8
+      date:
+      - Tue, 20 Oct 2026 14:57:02 GMT
+      inference-id:
+      - chatcmpl-81ac5c985fda4120
+      nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      report-to:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=TpRulWRBAUygwfXbcltLMxYO21ToDMPNT6RA7%2BIITJt%2Fw9CCEw2BzYGsjNEssU28n%2Fq%2BzQFr%2F%2FfRCllkU%2FKuCSbopVvmYeuZNUeCCcO4Dl6YkzDSQZS7LaiqtZIq8x0dTES6HIsgUn5xVrV8JAzjfyjKHVbib2g%3D"}]}'
+      server:
+      - cloudflare
+      transfer-encoding:
+      - chunked
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+      zp-rid:
+      - 9aca80dd-c291-48c2-81a6-4ce28b9cf0f1
+    status:
+      code: 200
+      message: OK
+version: 1
