@@ -7,12 +7,13 @@ authors = [{name = "Simon Willison"}]
 license = "Apache-2.0"
 classifiers = [
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
     "Programming Language :: Python :: 3.14",
     "Programming Language :: Python :: 3.15",
 ]
-requires-python = ">=3.12"
+requires-python = ">=3.11"
 dependencies = [
     "llm>=0.36",
     "httpx",
