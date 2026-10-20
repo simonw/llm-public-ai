@@ -1,0 +1,38 @@
+[project]
+name = "llm-public-ai"
+version = "0.1"
+description = "LLM models from publicai.co"
+readme = "README.md"
+authors = [{name = "Simon Willison"}]
+license = "Apache-2.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
+]
+requires-python = ">=3.12"
+dependencies = [
+    "llm>=0.36",
+    "httpx",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+package = true
+
+[project.urls]
+Homepage = "https://github.com/simonw/llm-public-ai"
+Changelog = "https://github.com/simonw/llm-public-ai/releases"
+Issues = "https://github.com/simonw/llm-public-ai/issues"
+CI = "https://github.com/simonw/llm-public-ai/actions"
+
+[project.entry-points.llm]
+public_ai = "llm_public_ai"
+
+[dependency-groups]
+dev = ["pytest", "pytest-asyncio", "pytest-recording"]
