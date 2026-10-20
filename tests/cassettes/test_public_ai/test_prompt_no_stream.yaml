@@ -1,0 +1,89 @@
+interactions:
+- request:
+    body: '{"model":"swiss-ai/apertus-70b-instruct","stream":false,"messages":[{"role":"user","content":"Reply
+      with just the word pelican, lowercase, nothing else"}]}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '155'
+      content-type:
+      - application/json
+      host:
+      - api.publicai.co
+      user-agent:
+      - llm-public-ai/0.1 (+https://github.com/simonw/llm-public-ai)
+      x-stainless-arch:
+      - x64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - Linux
+      x-stainless-package-version:
+      - 3.35.1
+      x-stainless-read-timeout:
+      - '600'
+      x-stainless-retry-count:
+      - '0'
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.13.16
+    method: POST
+    uri: https://api.publicai.co/v1/chat/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAA/32P3U7DMAyF3yXXC7Rd14y+CkJVlrirIU2i2OVHU98ddxKbBBJ31vF3fI4vCr3q
+        lakNWNOBNs63um3rvbbNwetTu2+6tvV1c3xSO+UKWAYx1OapOVTHuut2ak4egtygDyTSFh9thsIL
+        aVOdNEbisjgWczq9ggy9cpPlB5fmHIAxRVnRFzHMw4jxDCUXjBs25lqLW0egLXpK6GTqny9KOKRp
+        kDIkdknmlAXB6OFT9ZVUAiJ7BtVflEuR4XovQ0Bnt7iSguyUJUJiG7dyuaR39FAGyuBwRCdlIHja
+        ThQYF7LyYlxCWNd/4XV92anlHv7z5MDpDaIQ+6t9znxTjEic2Ia70v2CBg9sMVzbOOsm8De2kj5/
+        pPUbIbaxhdcBAAA=
+    headers:
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      cf-placement:
+      - remote-AMS
+      cf-ray:
+      - a4d8de049e9cf78f-EWR
+      connection:
+      - keep-alive
+      content-encoding:
+      - gzip
+      content-security-policy:
+      - frame-ancestors 'none'
+      content-type:
+      - application/json
+      date:
+      - Tue, 20 Oct 2026 14:56:07 GMT
+      inference-id:
+      - 717ea76e-7cd4-4413-a25d-b432644d1289
+      nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      report-to:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=rHP6pKLUfh%2B0dljLGVzvK%2FaWBkX0odkORwYvjVFMhiY3lmHQiehUryMGFe85pocRejbSSC4%2BU6SabAw3e0GtWQzNlEsLXZu8dJEFv%2B%2FA4DPDayDDldNM886AnUcKjXw2nwp1IJHRpu9L7DjS1w1GHf7NyOgI4Ak%3D"}]}'
+      server:
+      - cloudflare
+      transfer-encoding:
+      - chunked
+      vary:
+      - accept-encoding
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+      zp-rid:
+      - 9327edac-c046-4d27-b480-290368d15470
+    status:
+      code: 200
+      message: OK
+version: 1

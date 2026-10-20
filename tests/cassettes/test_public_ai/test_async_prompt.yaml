@@ -1,0 +1,93 @@
+interactions:
+- request:
+    body: '{"model":"swiss-ai/apertus-70b-instruct","stream":true,"messages":[{"role":"user","content":"Reply
+      with just the word pelican, lowercase, nothing else"}],"stream_options":{"include_usage":true}}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '194'
+      content-type:
+      - application/json
+      host:
+      - api.publicai.co
+      user-agent:
+      - llm-public-ai/0.1 (+https://github.com/simonw/llm-public-ai)
+      x-stainless-arch:
+      - x64
+      x-stainless-async:
+      - async:asyncio
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - Linux
+      x-stainless-package-version:
+      - 3.35.1
+      x-stainless-read-timeout:
+      - '600'
+      x-stainless-retry-count:
+      - '0'
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.13.16
+    method: POST
+    uri: https://api.publicai.co/v1/chat/completions
+  response:
+    body:
+      string: 'data: {"id":"bb7cf31b-15fd-479b-ad9c-dc21e03eeedd","object":"chat.completion.chunk","created":1792508178,"model":"swiss-ai/apertus-70b-instruct","choices":[{"index":0,"delta":{"role":"assistant","content":"pelican"}}]}
+
+
+        data: {"id":"bb7cf31b-15fd-479b-ad9c-dc21e03eeedd","object":"chat.completion.chunk","created":1792508178,"model":"swiss-ai/apertus-70b-instruct","choices":[{"index":0,"delta":{},"finish_reason":"stop"}]}
+
+
+        data: {"id":"bb7cf31b-15fd-479b-ad9c-dc21e03eeedd","created":1792508178,"model":"swiss-ai/apertus-70b-instruct","object":"chat.completion.chunk","choices":[{"index":0,"delta":{}}],"usage":{"completion_tokens":3,"prompt_tokens":73,"total_tokens":76,"completion_tokens_details":{"reasoning_tokens":0}}}
+
+
+        data: [DONE]
+
+
+        '
+    headers:
+      alt-svc:
+      - h3=":443"; ma=86400
+      cache-control:
+      - no-cache
+      cf-cache-status:
+      - DYNAMIC
+      cf-placement:
+      - remote-AMS
+      cf-ray:
+      - a4d8de506d3a438d-EWR
+      connection:
+      - keep-alive
+      content-security-policy:
+      - frame-ancestors 'none'
+      content-type:
+      - text/event-stream; charset=utf-8
+      date:
+      - Tue, 20 Oct 2026 14:56:19 GMT
+      inference-id:
+      - bb7cf31b-15fd-479b-ad9c-dc21e03eeedd
+      nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      report-to:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=42ol1zqWawboUtABKul%2FLwC14VFOggd9r%2Bs5o%2BQj2yrYvSlhxOz%2BtbjowiURdBq9GIbx0pGebYdDhEE5jRwHmSRHaaVANg%2BV4l%2F%2BEeyKK02l5Ao4xTWQxXd85Ye%2Bkpmbi%2BhIy5Xup5YFDdgBAXvpXJrkHXFMWT0%3D"}]}'
+      server:
+      - cloudflare
+      transfer-encoding:
+      - chunked
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+      zp-rid:
+      - c6aac294-c766-4649-bc43-7ac06e215bab
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,1451 @@
+interactions:
+- request:
+    body: '{"model":"swiss-ai/apertus-v1.5-70b","stream":true,"messages":[{"role":"user","content":"What
+      is 17*3?"}],"stream_options":{"include_usage":true},"cache":{"no-cache":true},"chat_template_kwargs":{"enable_thinking":true}}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '220'
+      content-type:
+      - application/json
+      host:
+      - api.publicai.co
+      user-agent:
+      - llm-public-ai/0.1 (+https://github.com/simonw/llm-public-ai)
+      x-stainless-arch:
+      - x64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - Linux
+      x-stainless-package-version:
+      - 3.35.1
+      x-stainless-read-timeout:
+      - '600'
+      x-stainless-retry-count:
+      - '0'
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.13.16
+    method: POST
+    uri: https://api.publicai.co/v1/chat/completions
+  response:
+    body:
+      string: "data: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\",\"\
+        object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"swiss-ai/apertus-v1.5-70b\"\
+        ,\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":\"\
+        \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"<|inner_prefix|>\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"Okay\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\",\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" let\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"'s\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" see\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\".\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" The\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" question\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" is\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" asking\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" for\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"7\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" multiplied\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" by\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"3\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\".\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" Al\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"right\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\",\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" I\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" need\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" to\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" do\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" a\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" straightforward\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" multiplication\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" here\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\".\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"\\n\\n\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"So\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\",\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" let\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"'s\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" break\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" it\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" down\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" step\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" by\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" step\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\".\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" When\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" I\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" multiply\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"7\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" by\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"3\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\",\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" it\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"'s\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" like\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" adding\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"7\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" three\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" times\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" together\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\".\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" So\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\",\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" first\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\",\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"7\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" plus\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"7\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" is\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"3\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"4\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\".\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" Then\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\",\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" adding\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" another\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"7\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" gets\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" us\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" to\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"5\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\".\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" That\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" should\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" be\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" straightforward\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\".\\n\\n\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"Alternatively\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\",\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" breaking\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" down\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"7\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" into\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" simpler\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" numbers\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" can\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" make\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" it\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" easier\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\".\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" Sevent\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"een\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" is\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" the\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" same\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" as\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"0\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" plus\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"7\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\".\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" So\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\",\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" I\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" can\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" multiply\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" each\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" part\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" by\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"3\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" separately\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" and\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" then\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" add\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" the\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" results\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" together\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\".\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" That\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" is\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\",\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"0\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" times\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"3\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" equals\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"3\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"0\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\",\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" and\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"7\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" times\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"3\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" is\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"2\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\".\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" Now\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\",\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" adding\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" those\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" two\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" results\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\",\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"3\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"0\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" plus\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"2\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" gives\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" us\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"5\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" again\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\".\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" Y\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"ep\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\",\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" that\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" checks\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" out\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\".\\n\\n\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"Just\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" to\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" make\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" sure\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" there\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"'s\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" no\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" mistake\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\",\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" let\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" me\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" verify\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" once\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" more\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\".\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" If\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" I\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" were\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" to\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" actually\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" do\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" the\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" multiplication\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\",\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"3\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" times\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"7\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" is\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"2\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\",\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" and\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"3\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" times\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"0\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" is\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"3\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"0\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\".\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" Adding\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" those\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" together\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\",\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" again\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" we\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" get\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"5\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\".\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" Everything\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" seems\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" consistent\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" here\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\".\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" There\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"'s\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" no\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" subtraction\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" or\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" extra\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" complexity\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" involved\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \u2013\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" just\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" basic\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" multiplication\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" and\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" addition\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\".\\n\\n\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"So\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\",\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" I\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"'m\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" pretty\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" confident\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" the\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" answer\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" is\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"5\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\".\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"<|inner_suffix|>\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"To\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" find\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" the\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" result\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" of\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \\\\(\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"7\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \\\\\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"times\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"3\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \\\\\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"),\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" you\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" can\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" use\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" either\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" direct\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" multiplication\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" or\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" break\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" it\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" down\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" into\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" simpler\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" steps\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\".\\n\\n\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"**\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"Method\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\":\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" Direct\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" Multi\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"plication\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"**\\n\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"Mult\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"iply\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"7\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" by\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"3\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\":\\n\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"\\\\[\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"\\n\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"7\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \\\\\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"times\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"3\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" =\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" (\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"0\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" +\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"7\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\")\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \\\\\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"times\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"3\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" =\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" (\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"0\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \\\\\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"times\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"3\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\")\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" +\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" (\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"7\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \\\\\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"times\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"3\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\")\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" =\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"3\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"0\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" +\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"2\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" =\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"5\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"\\n\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"\\\\]\\n\\n\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"**\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"Method\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"2\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\":\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" Repe\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"ated\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" Addition\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"**\\n\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"Add\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"7\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" to\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" itself\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" three\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" times\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\":\\n\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"\\\\[\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"\\n\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"7\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" +\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"7\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" +\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"7\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" =\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"3\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"4\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" +\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"7\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" =\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" \"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"5\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"\\n\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"\\\\]\\n\\n\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"In\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" both\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" approaches\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\",\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" the\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" result\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" is\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" the\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" same\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\".\\n\\n\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"**\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"Final\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\" Answer\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\":**\\n\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"\\\\[\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"\\n\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"\\\\boxed{\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"5\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"1\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"}\\n\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{\"content\"\
+        :\"\\\\]\"}}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"object\":\"chat.completion.chunk\",\"created\":1792508223,\"model\":\"\
+        swiss-ai/apertus-v1.5-70b\",\"choices\":[{\"index\":0,\"delta\":{},\"finish_reason\"\
+        :\"stop\"}]}\n\ndata: {\"id\":\"chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528\"\
+        ,\"created\":1792508223,\"model\":\"swiss-ai/apertus-v1.5-70b\",\"object\"\
+        :\"chat.completion.chunk\",\"choices\":[{\"index\":0,\"delta\":{}}],\"usage\"\
+        :{\"completion_tokens\":428,\"prompt_tokens\":14,\"total_tokens\":442,\"completion_tokens_details\"\
+        :{\"reasoning_tokens\":0}}}\n\ndata: [DONE]\n\n"
+    headers:
+      alt-svc:
+      - h3=":443"; ma=86400
+      cache-control:
+      - no-cache
+      cf-cache-status:
+      - DYNAMIC
+      cf-ray:
+      - a4d8df6a2a5a2f99-EWR
+      connection:
+      - keep-alive
+      content-security-policy:
+      - frame-ancestors 'none'
+      content-type:
+      - text/event-stream; charset=utf-8
+      date:
+      - Tue, 20 Oct 2026 14:57:03 GMT
+      inference-id:
+      - chatcmpl-40487863-ed1b-429f-8547-f79b0efe0528
+      nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      report-to:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=LsG445WzSkLxHrcADJxEbw%2FdlFzgvFwo60txR4b6WQwN3m8Wvjwx4aYV1qqdeqEH%2F4CgIDnzBKBGHaTqCK7CIoc9CUNpHi1bFJDBVmkwe%2BhrkQ3omrAHhgm1dTQAwcO7RxtDlIQ4q6tyW8NABHWlu%2B1sOhYoYS4%3D"}]}'
+      server:
+      - cloudflare
+      transfer-encoding:
+      - chunked
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - DENY
+      zp-rid:
+      - 7dd32dca-2f68-4242-8cb7-1f0b15c03bdf
+    status:
+      code: 200
+      message: OK
+version: 1
